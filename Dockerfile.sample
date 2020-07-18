@@ -1,0 +1,14 @@
+FROM node:12
+WORKDIR /test
+
+ENV MONGO_URL="replace-with-your-connection-string"
+ENV MONGO_DB="replace-with-the-name-of-your-db"
+ENV MONGO_COLLECTION="replace-with-the-name-of-your-collection"
+ENV TMDB_KEY="replace-with-your-TMDB-key"
+ENV OMDB_KEY="replace-with-your-OMDB-key"
+
+COPY package.json /test
+RUN npm install
+COPY . /test
+EXPOSE 3000
+CMD ["node" , "import/launch/launch-update.js"]
