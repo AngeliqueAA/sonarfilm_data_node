@@ -1,6 +1,6 @@
 # sonarfilm_data_node
 
-sonarfilm_data_node is a project to fill a mongoDB database (local or remote) with movies.
+sonarfilm_data_node is a project which fill a mongoDB database (local or remote) with movies.
 
 ## Overview
 
