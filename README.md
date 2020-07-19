@@ -27,7 +27,7 @@ Use OMDB and TMDB API to fill the DB with these info :
 
 ## Installation for local run
 
-1. Make sure that you update the sample.env file with your own credentials and rename the file **.env instead of sample.env**.
+1. Make sure that you update the sample.env file with your own credentials and rename the file **.env** instead of **sample.env**.
 
 2. Open a terminal and follow this commands : 
 
@@ -47,19 +47,19 @@ node import/launch/launch.js
 
 1. Make sure that you update the Dockerfile.sample file with your own credentials. 
 
-2. Rename the file **Dockerfile instead of Dockerfile.sample**.
+2. Rename the file **Dockerfile** instead of **Dockerfile.sample**.
 
-3. Rename the file **docker-compose.yml instead of docker-compose.sample.yml**.
+3. Rename the file **docker-compose.yml** instead of **docker-compose.sample.yml**.
 
 ### If you're using MongoDB Atlas (and so on, a remote DB)
 
 1. Make sure that you update the Dockerfile.sample file with your own credentials. 
 
-2. Rename the file **Dockerfile instead of Dockerfile.sample**.
+2. Rename the file **Dockerfile** instead of **Dockerfile.sample**.
 
 3. In the docker-compose.sample.yml, delete the links with mongo and the mongo service.
 
-4. Rename the file **docker-compose.yml instead of docker-compose.sample.yml**.
+4. Rename the file **docker-compose.yml** instead of **docker-compose.sample.yml**.
 
 
 #### Run the Dockerfile
