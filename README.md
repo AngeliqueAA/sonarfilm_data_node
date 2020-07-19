@@ -83,9 +83,14 @@ mongo
 show dbs
 use **name-of-your-db**
 ```
-3. If you want to check if your DB is fille, here's some requests :
+3. If you want to check if your DB is fill, here some requests :
 
 ```
 db.movie.findOne()
 db.movie.countDocuments({})
 ```
+
+
+## Related Project 
+
+The DB generate by this project is used by a Spring Boot microservice : [sonarfilm_movie](https://github.com/AngeliqueAA/sonarfilm_movies_spring)
