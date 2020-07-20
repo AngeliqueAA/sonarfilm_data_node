@@ -11,4 +11,4 @@ COPY package.json /test
 RUN npm install
 COPY . /test
 EXPOSE 3000
-CMD ["node" , "import/launch/launch-update.js"]
+CMD ["node" , "import/launch/launch.js"]
