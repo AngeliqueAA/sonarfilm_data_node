@@ -90,6 +90,29 @@ db.movie.findOne()
 db.movie.countDocuments({})
 ```
 
+## Everyday update for the DB (at 4PM UTC)
+
+### If you run with Dockerfile
+
+1. Replace this 
+
+```
+CMD ["node" , "import/launch/launch.js"]
+```
+
+by this
+
+```
+CMD ["node" , "import/launch/launch-update.js"]
+```
+
+### If you run in local
+
+1. Do the following command :
+
+```
+node import/launch/launch-update.js
+```
 
 ## Related Project 
 

@@ -7,7 +7,7 @@ dotenv.config();
 
 module.exports = async function fillDb () {  
   var movies= [];
-      const response = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_KEY}&language=fr-FR&primary_release_date.gte=${date.dateYesterday}&primary_release_date.lte=${date.dateToday}`)
+      const response = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_KEY}&language=fr-FR&primary_release_date.gte=${date.dateToday}&primary_release_date.lte=${date.dateToday}`)
       if(response.status==200){
         var results = response.data.results
         .map(
